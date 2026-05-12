@@ -5,7 +5,7 @@ import json
 # Configuration
 SERIAL_PORT = 'COM8'  # ⚠️ Change this to match your setup
 BAUD_RATE = 9600
-BASE_URL = 'http://localhost:3000/api/v1/atm'
+BASE_URL = 'https://schnell-pay-back-end.vercel.app/api/v1/atm'
 
 try:
     # Initialize Serial connection

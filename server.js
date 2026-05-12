@@ -6,7 +6,7 @@ const axios = require('axios');
 const port = new SerialPort({ path: 'COM8', baudRate: 9600 }); 
 const parser = port.pipe(new ReadlineParser({ delimiter: '\n' }));
 
-const BASE_URL = 'http://localhost:3000/api/v1/atm';
+const BASE_URL = 'https://schnell-pay-back-end.vercel.app/api/v1/atm';
 
 parser.on('data', async (data) => {
     const incoming = data.trim();
