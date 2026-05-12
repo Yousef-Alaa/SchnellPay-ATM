@@ -80,5 +80,5 @@ To run the simulation, you need to set up virtual serial ports.
 ## Related Repositories
 
 Explore the other components of the Schnell-Pay platform:
-- [Frontend Repository](https://github.com/Mahmoud-Nasser1/SchnellPayy) - React-based web interface for users.
+- [Frontend Repository](https://github.com/Mahmoud-Nasser1/SchnellPay-FrontEnd) - React-based web interface for users.
 - [Backend Repository](https://github.com/Yousef-Alaa/SchnellPay-BackEnd) - Node.js APIs and MS SQL server configuration.
