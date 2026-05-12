@@ -14,6 +14,17 @@ This project contains the microcontroller-based ATM interface for the Schnell-Pa
 
 ## Installation and Usage Guide
 
+### Prerequisites (Bridge Server)
+Depending on whether you choose to run the Node.js or Python bridge server, you must install the necessary packages first:
+- **For Node.js (`server.js`)**: 
+  ```bash
+  npm install serialport axios
+  ```
+- **For Python (`server.py`)**:
+  ```bash
+  pip install pyserial requests
+  ```
+
 You can run this project in two scenarios: on physical hardware or via simulation.
 
 ### Option 1: Physical Kit (ETA32 or ETA32mini)
