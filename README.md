@@ -2,11 +2,27 @@
 
 This project contains the microcontroller-based ATM interface for the Schnell-Pay digital wallet. It utilizes an ATmega32 microcontroller and can be run on physical hardware (ETA32 kit or ETA32mini kit) or simulated using Proteus.
 
+### Demonstration Video
+
+[▶️ Watch the ATM Workflow Video](./workflow-demo.mp4)
+
+
 ## Features
 - Microcontroller-based physical ATM interface
 - Hardware and software simulation support (ETA32 kits or Proteus)
 - Bridge servers in Python and Node.js for serial-to-HTTP communication with the backend
 - Realistic user flows mimicking ATM interactions
+
+## Usage Workflow
+
+To successfully interact with the ATM interface, follow these steps:
+
+1. **Account Creation**: First, create a digital wallet account using [Schnell-Pay](https://schnell-pay.vercel.app).
+2. **Identification**: On the ATM interface (Physical or Simulation), enter your registered **phone number**.
+3. **Verification**: Enter the **OTP** (One-Time Password) received.
+4. **Select Operation**: Choose the desired financial operation from the menu.
+5. **Transaction**: Enter the **amount** to complete the process.
+
 
 ## Project Structure
 - Contains the embedded C code for the ATmega32 microcontroller.
@@ -62,7 +78,7 @@ To run the simulation, you need to set up virtual serial ports.
    - Open the Proteus simulation file for the ATM project.
    - Locate the `COMPIM` component in the schematic.
    - Double-click the `COMPIM` component and configure it to use the first COM port of your virtual pair (e.g., `COM1`). Ensure the baud rate matches the code.
-   - Double-click the ATmega32 microcontroller component in Proteus. In the "Program File" field, browse and select your compiled `firmware.hex` file.
+   - Double-click the ATmega32 microcontroller component in Proteus. In the "Program File" field, browse and select your compiled `firmware.hex` file inside **AVR-Code/.pio/build/ATmega32/firmware.hex**.
 
 4. **Run the Bridge Server**:
    - Open either `server.py` or `server.js`.
